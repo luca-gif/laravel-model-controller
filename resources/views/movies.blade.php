@@ -5,14 +5,15 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-3"
-                @foreach ($movies as $movie) >
-                <div class="card">
-                    <li>Titolo: {{ $movie->title }}</li>
-                    <li>Lingua: {{ $movie->nationality }}</li>
-                    <li>Voto: {{ $movie->vote }}</li>
-                </div @endforeach>
-            </div>
+            @foreach ($movies as $movie)
+                <div class="col-3">
+                    <div class="card">
+                        <li>Titolo: {{ $movie->title }}</li>
+                        <li>Lingua: {{ $movie->nationality }}</li>
+                        <li>Voto: {{ $movie->vote }}</li>
+                    </div>
+                </div>
+            @endforeach
 
         </div>
     </div>
