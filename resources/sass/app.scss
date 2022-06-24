@@ -12,6 +12,9 @@ header {
     a {
         text-decoration: none;
         color: lightgrey;
+        &:hover {
+            color: lightcoral;
+        }
     }
 }
 
@@ -23,4 +26,9 @@ li {
     margin: 10px;
     background-color: lightgray;
     padding: 10px;
+    height: 120px;
+}
+
+.active {
+    color: lightcoral;
 }
