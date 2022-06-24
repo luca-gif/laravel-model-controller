@@ -6,15 +6,16 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function header()
+    {
+        return view('header');
+    }
+
     public function index()
     {
         return view('home');
     }
 
-    public function header()
-    {
-        return view('header');
-    }
 
     public function contacts()
     {
@@ -24,5 +25,10 @@ class PageController extends Controller
     public function about()
     {
         return view('about');
+    }
+
+    public function footer()
+    {
+        return view('footer');
     }
 }

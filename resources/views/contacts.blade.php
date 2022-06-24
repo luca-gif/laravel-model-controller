@@ -1,2 +1,5 @@
 @extends('layouts.main')
-<h1>Contatti!!</h1>
+
+@section('content')
+    <h1>Contattaci!</h1>
+@endsection

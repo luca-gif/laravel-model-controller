@@ -1,2 +1,5 @@
 @extends('layouts.main')
-<h1>Chi siamo??</h1>
+
+@section('content')
+    <h1>Chi siamo??</h1>
+@endsection
