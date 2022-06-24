@@ -2,15 +2,18 @@
 
 
 @section('content')
-    <ul>
+    <div class="container">
+        <div class="row">
 
-        @foreach ($movies as $movie)
-            <div class="card">
-                <li>Titolo: {{ $movie->title }}</li>
-                <li>Lingua: {{ $movie->nationality }}</li>
-                <li>Voto: {{ $movie->vote }}</li>
-            </div>
-        @endforeach
+            <ul class="col-3"
+                @foreach ($movies as $movie) >
+                <div class="card">
+                    <li>Titolo: {{ $movie->title }}</li>
+                    <li>Lingua: {{ $movie->nationality }}</li>
+                    <li>Voto: {{ $movie->vote }}</li>
+                </div @endforeach>
+            </ul>
 
-    </ul>
+        </div>
+    </div>
 @endsection

@@ -1,3 +1,2 @@
 @extends('layouts.main')
-
-Home page
+<h1>Homepage!</h1>
