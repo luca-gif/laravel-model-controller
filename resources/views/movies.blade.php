@@ -9,8 +9,11 @@
                     <div class="col-3">
                         <div class="card">
                             <li>Titolo: {{ $movie->title }}</li>
+                            @if ($movie->title != $movie->original_title)
+                                <li>Titolo: {{ $movie->original_title }}</li>
+                            @endif
                             <li>Lingua: {{ $movie->nationality }}</li>
-                            <li>Voto: {{ $movie->vote }}</li>
+                            <li>Voto: {{ round($movie->vote) }}</li>
                         </div>
                     </div>
                 @endforeach

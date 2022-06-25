@@ -1,21 +1,6 @@
+@import 'partials/header';
 body {
     background-color: black;
-}
-
-header {
-    ul {
-        display: flex;
-    }
-    li {
-        margin: 20px;
-    }
-    a {
-        text-decoration: none;
-        color: lightgrey;
-        &:hover {
-            color: lightcoral;
-        }
-    }
 }
 
 li {
@@ -24,9 +9,10 @@ li {
 
 .card {
     margin: 10px;
-    background-color: lightgray;
+    background-image: url('/img/1488037.jpg');
+    background-position: center;
     padding: 10px;
-    height: 120px;
+    height: 130px;
 }
 
 .active {
